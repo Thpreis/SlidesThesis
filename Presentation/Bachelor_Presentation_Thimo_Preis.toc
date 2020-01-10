@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Central question}{3}{0}{1}
+\beamer@sectionintoc {2}{Kinetic Field Theory}{5}{0}{2}
+\beamer@sectionintoc {3}{The density power spectrum to first order in the perturbations}{9}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{14}{0}{4}

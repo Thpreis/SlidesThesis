@@ -1,0 +1,608 @@
+\input{Header}
+\begin{document}
+\section{Central question}
+MAYBE ALSO PUT PICTURE OF MEASURED POWER SPECTRUM IN FOR REFERENCE ?
+Welcome to the talk about my Bachelor thesis concerned with a \emph{first order perturbative treatment of the cosmic density-fluctuation power spectrum in the Zel'dovich approximation}.
+We will begin with an introduction to the central question of this thesis and continue by introducing the underlying theoretical framework of Kinetic Field Theory.
+The explicit evaluation of our goal takes place in the third section, after which we conclude this talk with a summary and a potential outlook.
+\\
+\\
+Cosmic structure formation is quantified by the density power spectrum, which describes the density contrast of the universe as a function of scale. On large scales, gravity competes with cosmic expansion, and structures grow according to linear theory. Considering this linear regime of cosmic structure formation, the evolution behaviour of the density power spectrum is obtained from standard perturbation theory, which can be reproduced by Kinetic Field Theory already in the free theory.
+Whether the linear growth behaviour is also obtained upon transitioning into the interacting regime of KFT was the central question of my thesis.
+We therefore essentially want to check, whether the first order perturbative corrections next to the free power spectrum vanish in the linear regime.
+\\
+\\
+Let us therefore introduce a corresponding formulation of KFT, in order to explicitly evaluate the density power spectrum to first order in the perturbations relative to Zel'dovich trajectories which will model the underlying particle dynamics.
+\section{Kinetic Field Theory}
+\subsection{KFT in a nutshell}
+Kinetic Field Theory is a microscopic, non-equilibrium, statistical field theory for initially
+correlated ensembles of classical particles obeying Hamiltonian dynamics.
+The full microscopic phase-space dynamics of a gravitationally interacting ensemble consisting
+of individual particles are encoded in a central generating functional.
+The initial probability distribution on the phase space is mapped to any later
+time by means of the Hamiltonian flow.
+\subsection{Zel'dovich approximation}
+We employ the Zel'dovich approximation for the underlying dynamics of our statistical system consisting of classical point particles moving on an expanding spatial background.
+It is an approximative description of Hamiltonian
+dynamics which assumes particles to move on inertial trajectories.
+The essential step of the Zel’dovich approximation is now to extrapolate these trajectories to the present day.
+\\
+ \\
+The corresponding equations of motion are then found to be given by the following. (refer to eq. (5)).
+The first term in the momentum equation of motion accounts for the gravitational interaction between the particles, whereas the second term can be considered as an external force field $\vec{F}_d$ linearly dependent on the particle momentum, which we will call \emph{drag force}.
+\\
+\\
+We choose the perturbations as such that the "free" motion is provided by absence of the drag force and the gravitational interaction. This
+choice is motivated by the expectation that the gravitational interaction will be partially
+compensated by the drag force, such that the resulting contribution due to particle interactions would
+become small.\\
+Treating the corresponding contribution in the action as an inhomogeneity will then lead to a perturbation 
+theory relative to pure Zel’dovich trajectories. \\
+\subsection{The Zel'dovich approximation within Kinetic Field Theory}
+Having arrived at a concise expression for the canonical generating functional of KFT,
+one can proceed to solve for statistical quantities in a perturbative manner, where a Taylor expansion of the full generating
+functional in terms of the interaction operator $\hat{S}_I$ to first order will be our course of action.
+\\
+\\
+We find the following perturbative corrections to the density power spectrum by expanding the interaction operator to first order and calculating the two-point density cumulant, where the former term is sourced by the gravitational interaction and the latter term is sourced by the presence of a drag force. We now want to assess whether these corrections indeed vanish in the linear regime, such that the linear growth behaviour is consistently reproduced by KFT upon transitioning into the interacting regime. An isolated analysis of the respective corrections appearing here in terms of their contribution to the free density power spectrum in the linear regime is what the following section is dedicated to.
+\section{The density power spectrum to first order in the perturbations}
+\subsection{The Drag cumulant part one}
+The perturbative correction sourced by the drag force decomposes into two non-vanishing contributions, where the first contribution is displayed here in terms of powers in the initial power spectrum. Note that
+the blue line indicates the free power spectrum and that the black curve indicates the contribution of the corresponding perturbative correction.
+\\ \\
+The first contribution encodes a considerable enhancement of structures on small scales, especially by the terms non-linear in the initial power spectrum (which is represented by the orange curve). This accumulation of structures in the small scale regime is due to the presence of the drag force itself, which we can understand further if we turn towards the second contribution.
+\subsection{The Drag cumulant part two}
+This figure shows the second contribution to the perturbative correction sourced by the drag force, where dashed lines imply negative values.
+The linear contribution to the drag cumulant (indicated by red) substantially suppresses structure formation on large
+and intermediate scales, since the exerted drag force prevents confluent particle streams of forming larger structures.
+The presence of the drag force altogether increases the abundance of structures on small
+scales by slowing down particle trajectories, which amounts to suppressing structure formation on large
+and intermediate scales, therefore transporting power from large and intermediate to small scales (\emph{emphasise by going back to part one}).
+\subsection{Comparison of drag and interaction cumulant}
+Considering the perturbative correction sourced by the gravitational interaction of particles, we observe
+that the gravitational attraction encoded in them results in
+confluent particle streams, such that a considerable amount of power is generated on large and
+intermediate scales (which is indicated by the blue curve).\\
+\\
+Considering their joint contribution (which is represented by the black curve), the perturbative corrections sourced by the drag force and the gravitational interaction cancel effectively exactly in the intermediate to large scale regime (which is represented by black curve on large scales).
+Beyond-free structure growth encoded in the cumulants describing the effects of gravitational interaction is compensated due to the drag exerted on confluent streams in the large scale regime. 
+We can therefore conclude that the linear growth of the density power spectrum, as obtained in standard perturbation theory and already reproduced by KFT in the free theory, is preserved upon taking perturbations to first order into account.
+\subsection{The full first order perturbed density power spectrum}
+The full density power spectrum to first order in the perturbations is therefore obtained as an accumulation of all the results we have discussed so far.
+We observe how the suppression of structure growth beyond small scales due to the deceleration of confluent streams by the drag force (which is indicated by the orange curve) and the generation of structures due to gravitational interaction generating said confluent streams in the first place (here represented by the red curve) are counteracting each other on the respective scales.
+The abundance of structures on small scales is substantially enhanced due to the nature of the Zel’dovich approximation describing free inertial motion of particles and due to the drag force slowing down confluent streams. Qualitatively, this is the behaviour found for the non-linear $\Lambda$CDM density power spectrum.\\
+\\
+Our identification of perturbative contributions relative to the free motion of particles rests on the
+assumption that the resulting contribution to the action would be small with respect to
+the free action. From the compensation effect derived for the additional contributions emerging to first order in the perturbations relative to the free theory we can conclude that our framework is a physically feasible approach in the linear regime. Considering the non-linear regime however, the employed
+Zel’dovich approximation itself prevents us from accurately reproducing results from
+numerical N-body simulations. The free motion of particles along Zel’dovich trajectories leads to the dispersion of structures after stream crossing due to their free streaming motion. The reason behind this is that in the Zel'dovich approximation when different streams cross they pass each other without interacting (show with arms crossing and flying through),
+because the evolution of fluid elements, which we call particles, is local \footnote{Note that the evolution of fluid elements at this order is lo-
+	cal, i.e. it does not depend on the behavior of the rest of fluid elements}. As a result, high-density regions become washed
+out. This is represented in our result, since the abundance of high-density structures is way to small compared to results from measurements or N-body simulations. 
+Only considering the gravitational interactions and the drag force to first order, we are
+approximately describing the full Hamiltonian dynamics of the particles and are thus
+only partially compensating the dispersion of structures.
+This plot is the final result of this thesis in that it encapsulates the complete physical
+information contained in the framework of KFT by reproducing the linear behaviour as
+predicted by standard perturbation theory and the qualitative non-linear behaviour of
+structure growth as it is measured for the non-linear ΛCDM density power spectrum.
+\section{Conclusion}
+To conclude, we were able to show that the results of standard perturbation theory are reproduced to first order in the interactions in the linear regime, by using a formulation of KFT which accounts for the Zel’dovich approximation including a drag force.\\
+\\
+The enhancement of power in the non-linear regime of the density power spectrum, as
+observed in numerical N-body simulations of the ΛCDM non-linear power spectrum, is
+qualitatively reproduced by the accumulation of structures due to the presence of a drag
+force.\\
+\\
+It remains to be seen how well the compensation of the perturbative corrections in
+the linear regime and the enhancement of structure formation in the non-linear regime
+translates to higher orders in the perturbations.
+\\
+\\
+This concludes my talk and I want to thank you all for listening
+\newpage.
+\section{Questions}
+
+\begin{description}
+	\item[Linear and Non-Linear] But also take into consideration:\\
+	Non-linear evolution causes density-perturbation modes to couple:
+	while modes of different wave lengths evolve independently during
+	linear evolution, mode coupling in the non-linear evolution moves
+	power from large to small scales as structures collapse. The effect
+	on the power spectrum is that the amplitude on small scales is
+	increased at the expense of intermediate scales. Large scales
+	continue to evolve linearly and independently.\\
+	Therefore, large scales are also the linear regime in the sense that they are the only ones growing linearly if one takes the whole theory into consideration. \\
+	\\
+	Even if the original density perturbation field $\delta$ is Gaussian, it must
+	develop non-Gaussianities during non-linear evolution. This is
+	evident because $\delta \geq -1$ by definition, but can become arbitrarily
+	large. An originally Gaussian distribution of δ thus becomes
+	increasingly skewed as it develops a tail towards infinite δ.\\
+	\\
+	As long as the growth remains linear, structures do
+	not change their size against the expanding background.
+	A Fourier analysis in wave numbers co-moving with the
+	mean cosmic expansion shows that the Fourier modes of
+	the density-contrast field neither couple to each other nor
+	change their wave number with time. Large-scale density-
+	fluctuation modes are still linear today.\\
+	\\
+	Also consider that: As the density contrast approaches unity, its evolution
+	becomes nonlinear. In the course of nonlinear evolution,
+	overdensities contract, causing matter to flow from
+	larger to smaller scales. Power in the density-fluctuation
+	field is thus transported toward smaller modes or toward
+	larger wave numbers k. This mode coupling process de-
+	forms the power spectrum on small scales, i.e., for large
+	k.!
+	\item[Growth of Perturbations during radiation-dominated era] Why does radiation pressure suppress structures to grow ? What about dark matter, which does not interact electromagnetically ?
+	$\Rightarrow$ This has to be treated relativistically. One derives the linearised evolution equations for scalar perturbations in Newtonian gauge, which yield evolution
+equations of the Newtonian potential. One finds From the conservation of the stress-tensor, we derived the relativistic generalisations of
+the continuity equation and the Euler equation. Also, a Poisson equation and an equation for the curvature perturbations is obtained. Any mode of interest for observations today was outside the Hubble radius if we go back sufficiently far into the past. Inflation sets the initial condition for these superhorizon modes.
+On superhorizon scales, this equation yields that the newtonian gravitational potential is constant, such that (via Poisson) the density contrast is constant.
+On superhorizon scales, the density perturbations are therefore simply proportional to the curvature
+perturbation set up by inflation.
+Below that in the radiation dominated era, from the same set of equations it also follows that subhorizon modes of the newtonian gravitaitonal potential oscillate with a frequency and an amplitude that decays as $a^{−2}$.
+As pre-
+dicted, the potential is constant when the modes are outside the horizon. Two of the modes enter
+the horizon during the radiation era. While they are inside the horizon during the radiation
+era their amplitudes decrease as a −2 . The resulting amplitudes in the matter era are therefore
+strongly suppressed. During the matter era the potential is constant on all scales. The longest
+wavelength mode in the figure enters the horizon during the matter era, so its amplitude is only suppressed by the factor of 9/10 coming from the radiation-to-matter transition.During the
+matter era, the subhorizon fluctuations in the radiation density therefore oscillate with constant
+amplitude around a shifted equilibrium point\\
+\\
+\\
+If a mode enters the horizon during the radiation-
+dominated era, its growth will cease. Instead, the modes will oscillate due to the
+radiation pressure. To be more precise: the radiation-baryon “fluid” will oscillate.
+What happens to the CDM will be discussed below. These oscillations of the radiation-
+baryon fluid are called baryonic acoustic oscillations,
+Once the radiation decouples from the baryons (at$z \approx 1100$) the radiation no longer
+behaves like a fluid, and the oscillations cease. In fact, already slightly before that,
+when matter starts dominating the energy density, the radiation pressure will become
+less effective at preventing the growth of modes.
+The stalling of growth and the formation of oscillations is a property of the radiation-
+baryon fluid. Of more interest to us is, however, the behavior of the cold dark matter
+(CDM), because dark matter halos will later be the birthplace of galaxies. During the
+radiation-dominated era it is the radiation fluid that produces the growth of modes.
+The CDM only interacts with the radiation fluid through gravity NOW SUPERHORIZON. And this interaction
+only goes one way: The CDM reacts to the gravitational potential of the radiation, but
+not vice versa, because radiation dominates the mass, since we have nearly one billion photons per baryons in our Universe. The density of the CDM can
+increase at some point simply because CDM starts streaming into the gravitational
+well produced by a perturbation in the radiation fluid. SO THIS IS SUBHORIZON: If a mode enters the horizon during the radiation-dominated era and the radiative fluid
+starts oscillating, this does not necessarily mean that the CDM behaves in the same
+way. In fact, on small enough scales the effect of the fluctuation in the gravitational po-
+tential on the CDM can be regarded as averaged out. The CDM perturbations can now
+only grow through their own gravity, which is much weaker than the radiation-driven
+perturbations through which the CDM perturbations grew before. ESSENTIALLY, CDM DOESNT GROW BECAUSE IT WOULD ONY GROW IN THE GRAVITATIONAL WELLS OF PERTURBATIONS IN THE RADIATION-BARYON FLUID (THIS ONLY WORKS IN THIS DIRECTION SINCE WE HAVE NEARLY A BILLION PHOTONS PER BARYON ?? DOES THE LATTER REASON APPLY FOR CDM ?). THEN,  SUBHORIZON BARYONIC-ACOUSTIC OSCILLATIONS OF THE RADIATION BARYON FLUID PREVENT THE CDM TO FLOW INTO THE GRAVITATIONAL WELLS OF RADIATION PERTURBATIONS. THEREFORE, CDM CAN ONLY GROW BY ITS SELF-GRAVITY, WHICH IS MUCH WEAKER THAN THE RADIATION DRIVEN PERTURBATIONS THROUGH WHICH THE CDM PERTURBATIONS GREW BEFORE. [-> Also this:The main constituents of the cosmic fluid were dark
+matter, baryons, electrons, and photons. Overdensities
+in the dark matter compressed the fluid due to their
+gravity until the rising pressure in the tightly coupled
+baryon-electron-photon fluid was able to counteract
+gravity and drive the fluctuations apart. In due course,
+the pressure sank, gravity won again, and so forth: the
+baryon-electron-photon fluid underwent acoustic oscilla-
+tions but not the dark matter, which was decoupled.] DECOUPLED IN THE SENSE OF (I THINK) CDM HAS NO JEANS LENGTH SINCE DARK MATTER BEHAVES LIKE AN ENSEMBLE OF COLLISION-LESS PARTICLES WITH VANISHING VELOCITY DISPERSION. ?? This effectively
+stalls the growth of the CDM perturbations.T his stalling of the growth has a very strong consequence for the power spectrum
+of CDM density perturbations at the time of the CMB decoupling as well as for the
+power spectrum of the CMB anisotropies we see on the sky. Basically one expects for
+all k which enter the horizon after a eq (the scale factor a at the time of matter-radiation
+equilibrium) to have a power spectrum similar in shape to the initial one ($P(k) \propto k$),
+but grown by a factor of $(a_{eq} /a_{end, infl} )^4$.\\
+\\
+Also: The main constituents of the cosmic fluid were dark
+matter, baryons, electrons, and photons. Overdensities
+in the dark matter compressed the fluid due to their
+gravity until the rising pressure in the tightly coupled
+baryon-electron-photon fluid was able to counteract
+gravity and drive the fluctuations apart. In due course,
+the pressure sank, gravity won again, and so forth: the
+baryon-electron-photon fluid underwent acoustic oscilla-
+tions but not the dark matter, which was decoupled.
+Since the pressure was dominated by the photons, whose
+pressure is a third of their energy density, a good ap-
+proximation to the sound speed of the tightly coupled
+photon-baryon fluid was ..Only such density fluctuations could undergo acoustic
+oscillations which were small enough to be crossed by
+sound waves in the available time.\\
+\\
+
+	\item[HZP power spectrum of CDM at early time in matter-dominated era] The Harrison-Zel'dovich-Peebles spectrum inferred at the end of inflation with $P \propto k$ as it provides (nearly) scale invariant superhorizon scalar and tensor perturbations. This comes about since one can show that The potential
+	fluctuation caused by the perturbation remain constant (due to slow roll condition of the inflaton field) during
+	inflation, such that inflation predicts approximately identical
+	potential fluctuations on all accessible physical scales.
+	\\
+	Bartelmann argument: Recall that its [of the HZP power spectrum] shape was inferred from the
+	simple assumption that the mass of density fluctuations entering
+	the horizon should be independent of the time when they enter the
+	horizon. For the power spectrum of cold dark matter-
+	density fluctuations in the Universe, Recall that its shape was inferred from the
+	simple assumption that the rms mass of density fluctua-
+	tions entering the horizon should be independent of the
+	time when they enter the horizon and from the fact that
+	perturbation modes entering during the radiation era
+	are suppressed until matter begins dominating.
+	THESE ARE EQUIVALENT, INITIALLY IT WAS DERIVED FROM THIS ASSUMPTION OF TIME INDEPENDENCE, BUT NOWADAYS IT NATURALLY COMES ABOUT FROM SLOW ROLLING INFLATON FIELD.
+	\\
+	\\
+	The modes grow \begin{itemize}
+		\item $\propto a^2$ outside of the horizon in the radiation-dominated era
+		\item Not at all inside the horizon during radiation domination
+		\item $\propto a$ in the matter-dominated era inside the horizon
+	\end{itemize}
+	\item[Statistical properties of density contrast, power spectrum and autocorrelation function] 	A random field is called statistically homogeneous if all the joint multipoint probability distribution functions $ p(1,2,...)$ or its moments, ensemble averages of local density products, remain
+	the same under translation of the coordinates $x_1,x_2,...$ in space (here $i=(x_i)$). Thus the probabilities depend only on the relative positions. A stochastic field is called statistically isotropic if
+	$p(1,2,...) $is invariant under spatial rotations. We will assume that cosmic fields are statistically
+	homogeneous and isotropic, as predicted by most cosmological theories.\\
+	The two-point correlation function is defined as the joint ensemble average of the density at two
+	different locations,
+	\begin{equation*}
+	\xi(r) = <\delta(\vec{x}) \delta(\vec{x}+\vec{r})>
+	\end{equation*}
+	which depends only on the norm of r due to statistical homogeneity and isotropy. The power spectrum is a well-de9ned quantity for almost all homogeneous random fields. This
+	concept becomes, however, extremely fruitful when one considers a Gaussian field. It means that
+	any joint distribution of local densities is Gaussian distributed. Any ensemble average of product of
+	variables can then be obtained by product of ensemble averages of pairs. We write explicitly this => Wick theorem for density field (odd number of fields average vanish, whereas even number separates in product of averages over pairs.)  This is why the Bispectrum for Gaussian distribution vanishes, but the trispectrum would not ! The statistical properties of the random variables $\delta(\vec{k})$ are then entirely determined by the shape and normalization of$ P(k)$.
+	In most cases $<\delta>= 0$ and the above equations simplify considerably. In the following we usually
+	denote $\sigma^2=<\delta^2> - <\delta>^2$ as the local second-order cumulant. The Wick theorem then implies that in case of a Gaussian
+	field $\sigma^2$ is the only non-vanishing cumulant. \\
+	\\The power spectrum solely depends on the absolute value of the wave vectors due to isotropy.
+	The density contrast is a random field, which must be isotropic
+	and homogeneous in order to comply with the fundamental cos-
+	mological assumptions. This means that the statistical properties
+	of $\delta$, e.g. its mean or variance, do not change under rotations and
+	translations.
+	The mean of the density contrast vanishes per definition.
+	The variance of the density contrast defines the power spectrum, where $\delta_D$ is Dirac’s delta distribution, which ensures that modes of
+	different wave vector $\vec{k}$ are uncorrelated in Fourier space in order
+	to ensure homogeneity. The power spectrum cannot depend on the
+	direction of $\vec{k}$ because of isotropy.\\
+	\\
+	What is the power spectrum and how can it be measured ?\\
+	The definition (1.22) shows that the power spectrum is given by
+	an average over the Fourier modes of the density contrast. This
+	average extends over all Fourier modes with a wave number k,
+	i.e. it is an average over all directions in Fourier space keeping
+	k constant. In other words, Fourier modes are averaged within
+	spherical shells of radius k.In configuration space, structures can be quantified by the (two-
+	point) correlation function
+	\[\xi(x) = <\delta(\vec{x} \delta(\vec{x}+\vec{y}))>\]
+	where the average is now taken over all positions ~y and all ori-
+	entations of the separation vector $\vec{x}$ , assuming homogeneity and
+	isotropy. The correlation function ξ is the Fourier transform of
+	the power spectrum. Assuming isotropy implies:
+	\[ \xi(x) = \int \frac{d^3 k}{(2\pi)^3} P(k) e^{-i \vec{k}\cdot \vec{x}} =  1/(2 \pi^2) \int_0^{\infty} dk\; k^2 P(k) \frac{\sin(kx)}{kx}\]
+	The power spectrum can therefore be inferred as
+	
+	\[P(k) = 4 \pi \int dx \; x^2 \xi(x) \frac{\sin{kx}}{kx}\]
+	where the correlation function can be measured by counting galaxy pairs and use the correlation function of the galaxies as an estimate for the underlying matter distribution Further page 69 on observing big bang to shot noise and direct measurement of power spectrum.  However one understands the averaging process in the correlation function $\xi$ as an average over a volume or an average over a large number of volumes with $\vec{x}$ fixed inside them. The homogeneity and isotropy of the Universe implies that these two definitions lead
+	to the same answer. Mathematically put: the perturbation is ergodic.\\
+	\\
+	The density contrast in the Universe
+	is a Gaussian random field means that the probability for finding a
+	value between $\delta$ and $\delta + d\delta$ is given by a Gaussian distribution;\\
+	\\
+	Statistics in Cosmology: initial fluctuations are generated by inflation, amplification by self-gravity, statistical description necessary, density field
+	\begin{equation}
+	\delta = \frac{\rho -\bar{\rho}}{\bar{\rho}} \quad \mathrm{with} \quad \bar{\rho} = \Omega_m \rho_{crit}.
+	\end{equation}
+	Distribution of values of $\delta \rightarrow$ Gaussian random field, specify distirbution function and correlations:
+	\[	P(\delta(\vec{x}), \delta(\vec{y})) = \frac{1}{\sqrt{2 \pi \det(C)}} \exp{-1/2 
+		\begin{pmatrix}
+		\delta(\vec{x})\\
+		\delta(\vec{y})
+		\end{pmatrix}^T			
+		C^{-1}
+		\begin{pmatrix}
+		\delta(\vec{x})\\
+		\delta(\vec{y})
+		\end{pmatrix}}
+	\]
+	with covariance matrix
+	\[ C =  \begin{pmatrix}
+	\delta^2(\vec{x}) & \delta(\vec{x}) \delta(\vec{y})\\
+	\delta(\vec{y}) \delta(\vec{x}) & \delta^2(\vec{y})\\
+	\end{pmatrix}\].
+	The correlation function is then defined via
+	\[\xi({x}) = <  \delta(\vec{x})\delta(\vec{y}+\vec{x})>\],
+	if $\xi = 0$, then the Gaussian separates $P(\delta(\vec{x}),\delta(\vec{y}))= p(\delta(\vec{x})) p(\delta(\vec{y}))$ and the two field values are statistically independent. As $\vec{x}\rightarrow\vec{y}$, the correlation function becomes the variance $\xi\rightarrow <\delta^2(\vec{x})>$. For  homogeneous field:
+	statistical properties only depend on the separation vector $\vec{r}=\vec{x}-\vec{y}$ and not on the location $\vec{x}$, then 
+	\[\xi(\vec{r}=0) = <\delta(\vec{x})^2> = <\delta(\vec{y})^2>\]
+	and $\xi(\vec{x},\vec{y})= \xi(\vec{r})$.\\
+	The spectrum then describes the variance of Fourier modes
+	\begin{align*}
+	\delta(\vec{k}) &= \int d^3 x \delta(\vec{x}) e^{- i \vec{k}\vec{x}}\\
+	\delta(\vec{x})&= \int \frac{d^3k}{(2 \pi)^3} \delta(\vec{k}) e^{i \vec{k} \vec{x}}
+	\end{align*} 
+	Now assume homogeneous fields, i.e.
+	\[d^3 y = d^3 r \quad \mathrm{at\; fixed} \quad \vec{q}, \quad  \xi(\vec{x},\vec{y})=<\delta( \vec{x}) \delta(\vec{y})>.\]
+	Then, 
+	\begin{align*}
+	<\delta(\vec{k}), \delta(\vec{k_1})^* > &= \int d^3x \int d^3y \; <\delta(\vec{y})\delta(\vec{x})> e^{-i \vec{k}\vec{x}+ i \vec{k_1}\vec{y}}  \\
+	&= \int d^3r \xi(\vec{r}) e^{-i \vec{k}_1\vec{r}} \int d^3x e^{-i (\vec{k}-\vec{k_1})\vec{x}} \\
+	&= P(k) \quad \quad (2 \pi)^3 \delta_D(\vec{k}-\vec{k_1}).
+	\end{align*}
+	with the power spectrum as the Fourier transform of the correlation function. If the random field is also isotropic, $P(k)$ and $\xi(\vec{r})$ depend only on scale or separation, not on the direction.\\
+	\\
+	The power spectrum has unit $Mpc^3$ since $P(k) \times \delta_D(\vec{k})$ is unit less due to it defining the variance of the density contrast which itself is unit less
+	\\
+	\\
+	The density distribution is usually smoothed with a filter W R of a given size, R, commonly a
+	top-hat or a Gaussian window. Indeed, this is required by the discrete nature of galaxy catalogs
+	and N -body experiments used to simulate them.
+	\\
+	\\If the cosmic fields are Gaussian, their power spectrum (or, equivalently, their two-point correlation function) completely describes the statistical properties.
+	However, as we saw in Section 2, the dynamics of gravitational instability is non-linear, and therefore
+	non-linear evolution inevitably leads to the development of non-Gaussian features
+	\\
+	\\
+	In this review we are concerned about time evolution of the cosmic 9elds during the matter
+	domination epoch. In this case, as we discussed in Section 2, di=usion e=ects are negligible and
+	the evolution can be cast in terms of perfect Juid equations that describe conservation of mass and
+	momentum. In this case, the evolution of the density 9eld is given by a simple time-dependent
+	scaling of the “linear” power spectrum
+	
+	\begin{equation*}
+	P(k,t) = D_1^2(t) P_L(k),
+	\end{equation*}
+	where $D_1$ is the growing part of the linear growth factor. One must note, however, that the “lin-
+	ear” power spectrum speci9ed by $P_L(k)$ derives from the linear evolution of density fluctuations
+	through the radiation domination era and the resulting decoupling of matter from radiation. This evolution must be followed by using general relativistic Boltzmann numerical codes. The end
+	result is that
+	\[P_L(k)=k^{n_s} T^2 (k)\]
+	where $n_s$ is the primordial spectral index ($n_s$ = 1 denotes the canonical scale-invariant spectrum), $T(k)$ is the transfer function that describes the evolution of the density field perturbations through decoupling ($T (0) ≡ 1$).
+	
+	
+	
+	\item[ How are the potential, velocity and density power spectrum related ?]
+	The potential and the density are related via the Poisson equation
+	\[
+	k^2 \delta\Phi(k) \propto - \delta(k)\], whereas the density is similarly related linearly to the velocity potential via continuity
+	\begin{equation}
+		(\nabla)^2 \psi = - \delta^i
+	\end{equation} MORE PRECISE ? The pressure perturbations are related to the density perturbations via equation of state.
+	Everything is linearly connected, such that non-Gaussianities in the density power spectrum are similarly translated to the velocity and potential power spectrum.
+	Thus, given
+	the velocity potential, both density contrast and peculiar
+	velocity will be determined. The velocity potential also
+	has to be a Gaussian random field.
+	\item[Jeans Length, dispersion less CDM] The sound speed defines the Jeans length, below which perturbations cannot grow, but oscillate. For dark matter consisting of
+	weakly interacting massive particles, for instance, the concept of a
+	sound speed makes no sense because the dark matter behaves like
+	an ensemble of collision-less particles.forms of dark matter with vanishing velocity dispersion $v \rightarrow 0$ are called “cold
+	dark matter” (CDM). They have $\lambda_J \rightarrow 0$, hence structures can
+	grow on all scales.
+	\[			\lambda_J \propto \frac{1}{a \sqrt{<v^{-2}>}} \sqrt{\pi/G/\rho_0 } \].
+	Then the initial power spectrum with $ns=1$ is the shape of the spectrum for cold dark matter (CDM).
+	For hot dark matter (HDM), it is cut off above the Jeans wave
+	number k J corresponding to the finite velocity dispersion of the
+	hot particles.
+	\item Something on Zel'dovich approximation and forbidden spherical collapse due to eigenvalues of deformation tensor ?
+	\item[Expansion and collision time scale]  At early times, curvature and cosmological constant are negligible,
+	thus Friedmann’s equation implies
+	\[\dot{a} = a \sqrt{8 \pi G \rho/3} \quad \Rightarrow \quad t_{exp} \approx \frac{a}{\dot{a}} = \sqrt{\frac{3}{8 \pi G \rho}}\].
+	During radiation-dominated era $\rho \propto a^{-4}$ and during matter-dominated era $\rho \propto a^{-3}$, such that
+	\[ t_{exp, rad} \propto a^{2}, \qquad \qquad t_{exp,matter} \propto a^{3/2}  \]
+
+\item[time line]  $z=10^{10}$ Big Bang nucleosynthesis, $z=10^4$ matter-radiation equality, $z=10^3$ CMB release/formation of atoms.
+\item  Maybe the factor $(2 \pi)^{-3}$ I had to put into my equations per hand stems from parsevals theorem and me calculating in the wrong space since
+\[ 1/(2\pi)^3 \sigma^2_{\delta}.(\vec{k}) = \sigma^2_{\delta}(\vec{x})\]
+\item[Structure formation standard model]
+The current explanation of the large-scale
+structure of the universe is that the present distribution of matter on cosmological scales results from
+the growth of primordial, small, seed fluctuations on an otherwise homogeneous universe ampli9ed
+by gravitational instability. Tests of cosmological theories which characterize these primordial seeds
+are not deterministic in nature but rather statistical, for the following reasons. First, we do not have
+direct observational access to primordial fluctuations (which would provide de9nite initial conditions
+for the deterministic evolution equations). In addition, the time scale for cosmological evolution is
+so much longer than that over which we can make observations, that it is not possible to follow the
+evolution of single systems. In other words, what we observe through our past light cone is di=erent
+objects at different times of their evolution; therefore, testing the evolution of structure must be done
+statistically.
+The observable universe is thus modeled as a stochastic realization of a statistical ensemble of
+possibilities. The goal is to make statistical predictions, which in turn depend on the statistical
+properties of the primordial perturbations leading to the formation of large-scale structures. Among
+the two classes of models that have emerged to explain the large-scale structure of the universe, the
+physical origin of stochasticity can be quite di=erent and thus give rise to very di=erent predictions.
+The most widely considered models, based on the inJationary paradigm [279], generically give
+birth to adiabatic 10 Gaussian initial fluctuations, at least in the simplest single-9eld models [602,304,
+280,20]. In this case the origin of stochasticity lies on quantum fluctuations generated in the early
+universe; all fluctuations originate from scalar adiabatic perturbations of the inflaton field
+
+\item[On the Zel'dovich approximation] 
+ So far we have dealt with density and velocity 9elds and their equations of motion. However,
+it is possible to develop non-linear PT in a di=erent framework, the so-called Lagrangian scheme,
+by following the trajectories of particles or Juid elements [705,102,465], rather than studying the 
+dynamics of density and velocity fields. 5 In Lagrangian PT, the object of interest is the diplacement field $(q)$ which maps the initial particle positions q into the final Eulerian particle
+positions x,
+\[q = q^i + \psi(q^i,t)\]
+One can derive an evolution equation for the displacement field $\psi$, where the extrapolation of its linear solution to the present day is given by the Zel'dovich approximation:
+Note that the evolution of fluid elements at this order is
+local, i.e. it does not depend on the behavior of the rest of fluid elements. The Zel’dovich approximation (hereafter ZA) [705] consists in using the linear displacement 9eld
+as an approximate solution for the dynamical equations. The ZA is a local approximation and becomes
+the exact dynamics in one-dimensional collapse.A significant shortcoming of the ZA is the fact that after shell crossing (“pancake formation”),
+matter continues to flow throughout the pancake without ever turning around, washing out structures
+at small scales. This can be fixed phenomenologically by adding some small e=effective viscosity to
+Eq. (105), which then becomes the Burgers’ equation. This is the so-called adhesion approximation.\\
+\\ 
+The ZA [705] is one of the rare cases in which exact (non-perturbative) results can be obtained.
+However, given the drastic approximation to the dynamics, these exact results for the evolution
+of clustering statistics are of limited interest due to their restricted regime of validity. The reason
+behind this is that in the ZA when di=erent streams cross they pass each other without interacting,
+because the evolution of fluid elements is local. As a result, high-density regions become washed
+out. Nonetheless, the ZA often provides useful insights into non-linear behavior.
+For Gaussian initial conditions, the full non-linear power spectrum in the ZA can be obtained
+as follows. Changing
+from Eulerian to Lagrangian coordinates, the Fourier
+transform of the density 9eld is
+\begin{equation*}
+\delta(\vec{k}) = \int d^3q^i e^{i\vec{k}(\vec{q}^i+\vec{\psi}(\vec{q}^i)))} .
+\end{equation*}
+With $\psi$ being the displacement field. The power spectrum therefore is
+\begin{equation*}
+P(k) = \int d^3q^i e^{i \vec{k}\cdot \vec{q}^i}<e^{i \vec{k} \cdot \Delta\psi(\vec{q}^i)}>,
+\end{equation*}
+where $\Delta\psi(\vec{q}^i)=\psi(\vec{q}^i_1)-\psi(\vec{q}^i_2)$, and $\vec{q}^i = \vec{q}^i_1-\vec{q}^i_2$. For Gaussian initial conditions the ZA displacement
+is a Gaussian random 9eld, so Eq. (180) can be evaluated in terms of the two-point correlator of the displacement field.
+\\
+\\
+Since the inertial
+motion of particles on Zel’dovich-type trajectories already
+contains part of the gravitational interaction, even a first-
+order calculation in the microscopic perturbation theory
+captures the nonlinear evolution of the power spectrum
+over a wide range of scales remarkably well,\\
+\\
+ An analysis of the trajectories of classical, gravitating
+point particles in an expanding (Friedman-Lemaître-
+Robertson-Walker) space-time quickly leads to the con-
+clusion that the comoving displacement of particles from
+their initial positions is finite in reality even in the limit
+of infinite times. In sharp contrast, the remarkably suc-
+cessful Zel’dovich approximation [1] asserts that particle
+trajectories are well approximated by trajectories which
+resemble inertial motion in a suitable time coordinate,
+which manifestly leads to unbounded displacements. Beginning with the retarded Green’s functions of
+classical point particles in a static and in an expanding
+space-time, and suitably regrouping the terms in the point-
+particle Hamiltonian in an expanding space-time, we derive
+the effective gravitational potential acting on point particles
+relative to free Zel’dovich trajectories. The result shows
+that, while the density field is evolving linearly, this
+effective potential acts only for a short period of time at
+early cosmic times. This is a direct consequence of the
+relation between the initial density contrast and the initial
+particle velocities enforced by the matter continuity equa-
+tion. This result may contribute to clarifying the astounding
+success of the Zel’dovich approximation.\\
+\\
+$\tau=D_+-1$ transformation of time coordinate: We do this because
+the Zel’dovich approximation simply corresponds to free
+inertial motion in this time coordinate:
+\begin{equation*}
+\vec{q}(\tau) = \vec{q}^{(i)} + \tau \vec{p}^{(i)}
+\end{equation*}Particles can only travel a finite distance even over infite time (since the particle propagator
+is bounded from above) even in an infinite time. This behavior can intuitively be
+understood: Relative to the expanding space-time, free
+particles slow down in comoving coordinates because their
+initial momentum falls behind the cosmic expansion.
+The effective gravitational potential experienced by
+particles moving on Zel’dovich trajectories acts at
+early cosmic times and for a short period of time
+only, until nonlinear evolution sets in much later. At
+the initial time, this effective gravitational potential
+vanishes exactly because the initial particle velocity
+is constrained by the continuity equation for the
+density contrast. This contributes to explaining why
+the Zel’dovich approximation is so good even
+though its particle trajectories differ grossly from
+those expected from the Hamiltonian for point
+particles in an expanding space-time: The inertial
+motion in the Zel’dovich approximation captures a
+substantial fraction of the gravitational interaction
+that would otherwise be necessary to accelerate the
+bound Hamiltonian trajectories of free particles. The
+gravitational acceleration relative to the Zel’dovich
+trajectories is much weaker than it needs to be
+relative to the bound trajectories.
+However, the Zel’dovich approximation overshoots
+substantially at late times.
+\\
+\\
+The correct Greens solution to the rescaled equations of motion in my choice of time coordinates is given by 
+\[ g_{qp}(t,t_i) = \int_{t_i}^{t} d\hat{t} \frac{1}{g(\hat{t})}\]
+where $g(t)$ is exactly simply the time dependent function we used to rescale Lagrangian. Then one replaces $g_{qp}$ by Zel'dovich propagator to simplify everything. This is exactly done in KFT Review, but without rescaling momentum variable !. Note: 
+It is important to note that $ḡ q p (t , t 0 )$ is limited from above
+because of the cosmic expansion. Consequently, the iner-
+tial trajectories described by this Green’s function deviate
+strongly from the true, fully interacting trajectories. It will
+thus be advantageous to find a replacement for $ḡ q p$ that
+already captures part of the gravitational interaction. An
+example for such a replacement is given by the Zel’dovich
+approximation [46], but we prefer a slightly more general
+approach here.\\
+A frequent and convenient choice
+in cosmology is the Zel’dovich approximation [46], which
+describes particle trajectories as inertial in the time coor-
+dinate $t = D_+$ 
+\begin{equation*}
+	g_{qp}(t,t_0)=t-t_0
+\end{equation*}
+Inserting this particular choice into (56) and comparing
+to (50) immediately results in effective force to be 
+\[ f(t) = - \frac{\dot{g}}{g} \dot{q} - \nabla \phi \]\\
+\\
+
+\item[Zel'dovich inside KFT]
+ For late-time cosmologi-
+cal applications using the unbound Zel’dovich propagator (my propagator), the correlation operator $\mathcal{C}(p)\approx1$ safely.\\
+\\
+The drag amplitude decreases with wavenumber, hence it has the strongest effect on the largest structures => Confluent streams/large structures are predominantly affected.\\
+\\
+Since
+we assume that the initial density fluctuations are a sta-
+tistically isotropic and homogeneous random field, the
+momentum correlations can only depend on the absolute
+value of the relative particle separation.With the Gaussian initial distribution (67) of particle po-
+sitions and momenta, the momenta can immediately be
+integrated out in the free generating functional. With the momentum-correlation matrix depending only
+on the relative particle separations, this remaining expression can be fully factorised\\
+\\
+\item[Different things]
+\item By
+the Helmholtz theorem, the peculiar velocity field can be
+decomposed into a curl and a gradient. By the cosmic ex-
+pansion and angular-momentum conservation, the curl
+component will quickly decay, so we can model the initial
+peculiar velocity as the gradient of a velocity potential Ψ.
+\item read a bit about grand canonical ensemble transition in felix phd thesis if björn should ask ..
+\item Was das Auftauchen von mehr Wechselwirkungskumulanten als Dragkumulanten bei höheren Ordnungen angeht: Man braucht ja immer eine gleiche Ordnung von beiden zum Wegheben. In zweiter Ordnung wird es drei non-mode-coupling Terme aus der Wechselwirkung geben. In der Dragkumulante zweiter Ordnung gibt es zwei Ableitungsoperatoren, die am Ende auf drei verschiedene Weisen zu Termen der Art des dritten Terms in der ersten Ordnung führen. Es könnte also durchaus sein, dass die Cancelung auch bei höheren Ordnungen noch klappt.
+
+\item Felix calls interaction cumulant non-mode-coupling term
+\item The fast expansion due to the radiation density inhibited
+further growth of such structures until the matter den-
+sity started dominating. ??
+\item Notice that Saha’s equation contains the inverse of the
+$\eta$ parameter. which is a huge number due to
+the high photon-to-baryon ratio in the Universe. This
+counteracts the exponential which would otherwise
+guarantee that recombination happens when kT  $\approx E_{ion,H}$ , i.e.,
+at T ⬇ 1.6⫻ 10 5 K. Recombination is thus delayed by the
+high photon number, which illustrates that newly formed
+hydrogen atoms are effectively reionized by sufficiently energetic photons until the temperature has dropped
+well below the ionization energy.
+
+\item The matter power spectrum describes the density contrast of the universe (the difference between the local density and the mean density) as a function of scale. It is the Fourier transform of the matter correlation function. On large scales, gravity competes with cosmic expansion, and structures grow according to linear theory. In this regime, the density contrast field is Gaussian, Fourier modes evolve independently, and the power spectrum is sufficient to completely describe the density field. On small scales, gravitational collapse is non-linear, and can only be computed accurately using N-body simulations. Higher-order statistics are necessary to describe the full field at small scales.
+
+\item[The Story of structure formation so far, important bits]
+
+The early universe was dominated by radiation; in this case density fluctuations larger than the cosmic horizon grow proportional to the scale factor, as the gravitational potential fluctuations remain constant. Structures smaller than the horizon remained essentially frozen due to radiation domination impeding growth. As the universe expanded, the density of radiation drops faster than matter (due to redshifting of photon energy); this led to a crossover called matter-radiation equality at ~ 50,000 years after the Big Bang. After this all dark matter ripples could grow freely, forming seeds into which the baryons could later fall. The size of the universe at this epoch forms a turnover in the matter power spectrum which can be measured in large redshift surveys.(Point of $k_{max}$ in HZP spectrum can be understood as the turning point of matter radiation equality, there growth also had a turnover.)
+\\
+\\
+The theory of what happened after the universe's first 400,000 years is one of hierarchical structure formation: the smaller gravitationally bound structures such as matter peaks containing the first stars and stellar clusters formed first, and these subsequently merged with gas and dark matter to form galaxies, followed by groups, clusters and superclusters of galaxies.\\
+Difficult are only the first 400000 years...\\
+\\
+hese perturbations are thought to have a very specific character: they form a Gaussian random field whose covariance function is diagonal and nearly scale-invariant. Observed fluctuations appear to have exactly this form, and in addition the spectral index measured by WMAP—the spectral index measures the deviation from a scale-invariant (or Harrison-Zel'dovich) spectrum—is very nearly the value predicted by the simplest and most robust models of inflation. Another important property of the primordial perturbations, that they are adiabatic (or isentropic between the various kinds of matter that compose the universe), is predicted by cosmic inflation and has been confirmed by observations.
+\\
+\\
+The primordial plasma would have had very slight overdensities of matter, thought to have derived from the enlargement of quantum fluctuations during inflation. Whatever the source, these overdensities gravitationally attract matter. But the intense heat of the near constant photon-matter interactions of this epoch rather forcefully seeks thermal equilibrium, which creates a large amount of outward pressure. These counteracting forces of gravity and pressure create oscillations, analogous to sound waves created in air by pressure differences.
+
+These perturbations are important, as they are responsible for the subtle physics that result in the cosmic microwave background anisotropy. In this epoch, the amplitude of perturbations that enter the horizon oscillate sinusoidally, with dense regions becoming more rarefied and then becoming dense again, with a frequency which is related to the size of the perturbation. If the perturbation oscillates an integral or half-integral number of times between coming into the horizon and recombination, it appears as an acoustic peak of the cosmic microwave background anisotropy. (A half-oscillation, in which a dense region becomes a rarefied region or vice versa, appears as a peak because the anisotropy is displayed as a power spectrum, so underdensities contribute to the power just as much as overdensities.
+\\
+\\
+Dark matter plays a crucial role in structure formation because it feels only the force of gravity: the gravitational Jeans instability which allows compact structures to form is not opposed by any force, such as radiation pressure. As a result, dark matter begins to collapse into a complex network of dark matter halos well before ordinary matter, which is impeded by pressure forces. Without dark matter, the epoch of galaxy formation would occur substantially later in the universe than is observed.
+\\
+\\
+The physics of structure formation in this epoch is particularly simple, as dark matter perturbations with different wavelengths evolve independently. As the Hubble radius grows in the expanding universe, it encompasses larger and larger disturbances. During matter domination, all causal dark matter perturbations grow through gravitational clustering. However, the shorter-wavelength perturbations that are included during radiation domination have their growth retarded until matter domination. At this stage, luminous, baryonic matter is expected to mirror the evolution of the dark matter simply, and their distributions should closely trace one another.
+
+It is a simple matter to calculate this "linear power spectrum"\\
+\\
+When the perturbations have grown sufficiently, a small region might become substantially denser than the mean density of the universe. At this point, the physics involved becomes substantially more complicated. When the deviations from homogeneity are small, the dark matter may be treated as a pressureless fluid and evolves by very simple equations. In regions which are significantly denser than the background, the full Newtonian theory of gravity must be included.\\
+\\
+
+\end{description}
+
+\end{document}
